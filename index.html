@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <style>
+        /* 全局样式 */
+        body {
+            background-color: black; /* 背景颜色 */
+            color: white; /* 文字颜色 */
+            font-family: Arial, sans-serif; /* 字体 */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 顶部导航栏样式 */
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #222; /* 导航栏背景 */
+            padding: 10px;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        header nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            color: #007BFF; /* 鼠标悬停时的链接颜色 */
+        }
+
+        /* 滚动标题样式 */
+        .marquee {
+            background-color: #222;
+            color: white;
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        .marquee h1 {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* 表格布局样式 */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid white;
+        }
+
+        th {
+            background-color: #87CEEB; /* 标题栏颜色（天蓝色） */
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* 内容区域样式 */
+        .content {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .content img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* 底部样式 */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 修改Logo图片路径 -->
+        <img src="logo.jpg" alt="Logo">
+        <nav>
+            <a href="index.html">主页</a>
+            <a href="a.html">关于我的娃娃</a>
+            <a href="b.html">网络学习方法</a>
+            <a href="c.html">关于我</a>
+            <a href="d.html">点这里v你50</a>
+   
+<a href="mailto:3096105734@qq.com" target="_blank">联系我</a>     </nav>
+    </header>
+
+    <div class="marquee">
+        <h1>......欢迎来到我的个人网站！</h1>
+    </div>
+
+    <table>
+        <tr>
+            <th>祝你天天开心</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="content">
+                    <!-- 修改介绍文字 -->
+                    <p>你好欢迎来到我的个人网站，这是网站的看门小狐狸。<p>
+<p>姓名：secret<p>
+<p>班级:环卓2401<p>
+<p>联系方式：3096105734@qq.com</p>
+                    <!-- 修改照片路径 -->
+                    <img src="photo.jpg" alt="我的照片">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <!-- 修改邮箱地址 -->
+        <a href="mailto:3096105734@qq.com">联系我</a>
+    </footer>
+</body>
+</html>
